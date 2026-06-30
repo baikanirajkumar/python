@@ -33,3 +33,23 @@ a["rollno"]=12
 
 
 
+a={"name":"rajkumar","rollno":14}
+# print(a)
+# print(a.get("name"))
+# print(a.keys())
+# print(a.values())
+# print(a.items())
+# a.update({"rollno":15})
+# print(a)
+# # a.pop("rollno")
+# # print(a)
+# a.popitem()
+# print(a)
+# a.clear()
+# print(a)
+b=a.copy()
+print(b)
+# print(id(b))
+# print(id(a))
+a.setdefault("city","chennai")
+print(a)

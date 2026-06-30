@@ -93,7 +93,7 @@
 # #copy function
 # x=["a","b","c","d"]
 # y=x.copy()
-# print(id(x))
+# print(id(x)) #memory address
 # print(id(y))
 
 # #sort

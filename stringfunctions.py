@@ -25,7 +25,7 @@ common string functions(len(),max(),min(),sorted())"""
 # y=12        # we cannot add integer and string
 # print(x+y)   #error
 
-# print("abc">"z")  # based on ascii value
+print("abc">"z")  # based on ascii value
 
 
 # x="codegnan"  #delete the data
@@ -66,10 +66,10 @@ common string functions(len(),max(),min(),sorted())"""
 
 
 # # to overcome above error there is find function it will wont show error it will return -1 if the sequence is not available
-x="rajkumar"
-print(x.find("aaj"))
-print(x.rfind("r"))  # take index from right....if the character is not there it will -1
-print(x.rindex("ku")) ## take "       "   "......."                                   "show value error
+# x="rajkumar"
+# print(x.find("aaj"))
+# print(x.rfind("r"))  # take index from right....if the character is not there it will -1
+# print(x.rindex("ku")) ## take "       "   "......."                                   "show value error
 
 
 """⚠️ Important Difference
@@ -79,13 +79,13 @@ rfind()    	 returns -1 checks from right side and last occurance
 index()	     Error
 rindex()	 Error    checks from right side and last occurance"""
 
-x="rajkumar"
-y="ramu"
-print(x.startswith("r"))
-print(x.startswith("a"))
-print(x.endswith("r"))
-print(x.endswith("b"))
-print(x.endswith("rjk")) # return false because it check sequence
+# x="rajkumar"
+# y="ramu"
+# print(x.startswith("r"))
+# print(x.startswith("a"))
+# print(x.endswith("r"))
+# print(x.endswith("b"))
+# print(x.endswith("rjk")) # return false because it check sequence
 
 
 # print(x.endswith("a",0,7)) #string.endswith(substring, start, end), it will take three parameters...slicing format
@@ -118,13 +118,13 @@ print(x.endswith("rjk")) # return false because it check sequence
 # print(x.join(["x","y","z"])) #xraj kumar yraj kumar z (output)
 
 
-# x="123"      # only single digit returns true..if you give float return false(100.4)
-# print(x.isdigit())
+x="123"      # only single digit returns true..if you give float return false(100.4)
+print(x.isdigit())
 
-# print("120.4".isdigit())
+print("120.4".isdigit())
 
 
-# print("hello".isalpha())
+print("hello".isalpha())
 
 # x="rajkumar123"     # returns true if it contains all characters and all numbers but return false if it contains special characters
 # x="112231"
@@ -135,7 +135,7 @@ print(x.endswith("rjk")) # return false because it check sequence
 
 x="  "  # return true when string contains only white space
 # x="rajkumar" #return false because it contains characters within the double quotes
-# print(x.isspace())
+print(x.isspace())
 
 #unpacking of strings
 # a,b,c,*d="[rajkumar]" # for *d remaining elements will be assigned if we print remaining all elemnets will be printed
