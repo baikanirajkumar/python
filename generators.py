@@ -16,4 +16,11 @@ print(next(b))
 print(next(b))
 print(next(b))
 
-  
+# How yield Works
+
+# When Python reaches yield:
+
+# It returns the current value.
+# It pauses the function.
+# The function's state is saved.
+# On the next next() call, execution resumes from where it stopped.

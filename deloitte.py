@@ -388,8 +388,29 @@
 # print("outer:",a)
 
 
-a=[1,2,3]
-a.append([5,3])
-print(a)
-a.extend([3,3])
-print(a)
+# a=[1,2,3]
+# a.append([5,3])
+# print(a)
+# a.extend([3,3])
+# print(a)
+
+import math
+a=[1,-3,2,-4,5]
+new=[]
+updated=[]
+for i in a:
+    if i>0:
+        new.append(i)
+    else:
+        b=int(math.fabs(i))
+        new.append(b)
+new.sort()
+for j in new:
+    if j in a:
+        updated.append(j)
+    else:
+        j=-(j)
+        updated.append(j)
+
+print(updated)
+

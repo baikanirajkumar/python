@@ -10,6 +10,7 @@
 # print(classname.x)
 
 
+
 # def fun_1(a):
 #     print("hello")
 #     return a
@@ -257,19 +258,28 @@
 # c.start()
 
 
-from multipledispatch import dispatch
-class classname():
-    @dispatch()
-    def met_1(self):
-        print("this is met_1")
-    @dispatch(str)
-    def met_1(self,a):
-        print(a)
-    @dispatch(int,float)
-    def met_1(self,a,b):
-        print(a)
-        print(b)
-obj=classname()
-obj.met_1()
-obj.met_1("rajkumar")
-obj.met_1(10,20.0)
+# from multipledispatch import dispatch
+# class classname():
+#     @dispatch()
+#     def met_1(self):
+#         print("this is met_1")
+#     @dispatch(str)
+#     def met_1(self,a):
+#         print(a)
+#     @dispatch(int,float)
+#     def met_1(self,a,b):
+#         print(a)
+#         print(b)
+# obj=classname()
+# obj.met_1()
+# obj.met_1("rajkumar")
+# obj.met_1(10,20.0)
+
+
+# a=int(input("enter the age"))
+# b=input("enter the name")
+# print(f"my name is {b} and my age is {a}")
+
+
+li=list(map(int,input("enter the list").split(",")))
+print(li)

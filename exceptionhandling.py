@@ -33,6 +33,11 @@ handling runtime errors using try, except, else,
 and finally blocks, allowing the program to continue execution without crashing."""
 
 
+"""try:code that causes exception
+except:code to handle the exception
+else:The else block exceutes if no exception occurs
+finally:the finally block exceutes wheather an exception occurs or not"""
+
 # #ZeroDivisionError
 # try:
 #     a=10
@@ -74,17 +79,40 @@ and finally blocks, allowing the program to continue execution without crashing.
 # except TypeError:
 #     print("Cannot add string and int")
 
+#FileNotFoundError
+# try:
+#     file=open("E:/python/raj.txt","r") #if file is not found then it return file not fond
+#     print(file.read())
+# except FileNotFoundError:
+#     print("file not found")
 
-#complete example
+
+
+# #complete example
+# try:
+#     a=int(input('enter the number:'))
+#     b=int(input("enter the number:"))
+#     c=a/b
+# except ZeroDivisionError:
+#     print("cannot divide with Zero")
+# except ValueError:
+#     print("please enter an integer")
+# else:
+#     print("result",c)
+# finally:
+#     print("program execution completed")
+
+
 try:
-    a=int(input('enter the number:'))
+    a=int(input("enter the number:"))
     b=int(input("enter the number:"))
     c=a/b
+    print(c)
 except ZeroDivisionError:
-    print("cannot divide with Zero")
+    print("cannot divide by zero")
 except ValueError:
-    print("please enter an integer")
+    print("please enter  the valid integer")
 else:
-    print("result",c)
+    print(c)
 finally:
-    print("program execution completed")
+    print("program exceution completed")
